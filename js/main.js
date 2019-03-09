@@ -274,7 +274,6 @@ const CTRL = (function(MDL, VIEW) {
         });
     }
 
-
     function initAddDisplayListeners() {
         const submitCard = () => {
             const questionInput = elements.questionInput();
