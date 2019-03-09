@@ -1,0 +1,205 @@
+
+/* ===== BASE ===== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: rgba(0,0,0,0.75);
+    color: white;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    letter-spacing: 1.25px;
+}
+.notecard-container {
+    height: 50rem;
+    width: 50rem;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+/* =====  REUSABLE STYLES =====  */
+.button {
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    padding: 0.25rem 1rem;
+    font-size: 2rem; 
+    cursor: pointer;
+}
+.button:hover {
+    color: black;
+    background-color: white;
+}
+.button:active {
+    color: black;
+    background-color: black;
+}
+
+
+
+/* =====   NAVBAR  ===== */
+.nav-border {
+    position: relative;
+    left: 0.5%;
+    height: 7rem;
+    width: 99%;
+    border-bottom: 2px solid white;
+    border-radius: 5px;
+}
+.nav-heading {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    font-weight: 200;
+}
+
+.add {
+    position: absolute;
+    top: 4%;
+    right: 40%;
+}
+.remove {
+    position: absolute;
+    top: 4%;
+    right: 20%;
+}
+.recall {
+    position: absolute;
+    top: 4%;
+    right: 3.5%;
+}
+/* ===== WELCOME TEXT ===== */
+.welcome-text:first-of-type {
+    margin-top: 10rem;
+}
+.welcome-text {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+/* ===== ADD NOTECARD DISPLAY ===== */
+.add-notecard {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    height: 20rem;
+    width: 40rem;
+    background-color: white;
+    box-shadow: 1px 3px 3px rgba(0,0,0,0.5);
+    border-radius: 8px;
+}
+
+input {
+    border: none;
+    background-color: none;
+    border-bottom: 3px solid rgba(0,0,0,0.7);
+    color: rgba(0,0,0,0.7);
+    font-size: 1.6rem;
+    letter-spacing: 1.5px;
+    padding-left: 1rem;
+    width: 33rem;
+}
+
+.add-question {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+}
+
+.add-answer {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+}
+
+.add-submit {
+    position: absolute;
+    top: 60%;
+    left: 42%;
+    color: rgba(0,0,0,0.7);
+    border-color: rgba(0,0,0,0.7);
+}
+.add-submit:hover {
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+}
+
+
+/* ===== REMOVE DISPLAY ===== */
+.remove-container {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+    overflow: scroll;
+}
+
+.question {
+    font-size: 1.6rem;
+    margin: 1rem 0;
+}
+
+
+/* ===== RECLL DISPLAY ===== */
+.recall-notecard {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    height: 20rem;
+    width: 40rem;
+    background-color: white;
+    box-shadow: 1px 3px 3px rgba(0,0,0,0.5);
+    border-radius: 8px;
+}
+
+.recall-next {
+    position: absolute;
+    top: 60%;
+    left: 42%;
+    color: rgba(0,0,0,0.7);
+    border-color: rgba(0,0,0,0.7);
+}
+.recall-next:hover {
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.recall-type {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 35%;
+    left: 22%;
+    color: rgba(0,0,0,0.7);
+    text-align: center;
+    font-size: 2rem;
+    width: 40rem;
+}
+
+.recall-text {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 47%;
+    left: 50%;
+    color: rgba(0,0,0,0.7);
+    text-align: center;
+    font-size: 2rem;
+    width: 38rem;
+}
