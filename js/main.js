@@ -252,7 +252,7 @@ const CTRL = (function(MDL, VIEW) {
                     MDL.cardCount ++;
                     handleRecall();
                 });
-            } else throw new Error("");
+            }
         } else {
             MDL.cardCount = 0;
             DOM().deleteContents(elements.display);
